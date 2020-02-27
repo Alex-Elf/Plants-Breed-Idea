@@ -10,5 +10,5 @@ public class Plant
 	public Plant[] parents;
 	public short growSpeed;
 	public short productYield;
-
+	public Resistance[] resistances;
 }
