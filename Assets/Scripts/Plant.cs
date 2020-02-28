@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class Plant
 {
-	public const short parameterMax = 10;
-	public const short parameterMin = 0;
+	public const short ParameterMax = 10;
+	public const short ParameterMin = 0;
 
-	public Plant[] parents;
-	public short growSpeed;
-	public short productYield;
-	public Resistance[] resistances;
+	public int Id;
+	public Plant[] Parents;
+	public short GrowSpeed;
+	public short ProductYield;
+	public Resistance[] Resistances;
+	public DateTime TimeWhenPlanted;
+	public Product[] products;
+	public Modifier[] Modifiers;
 }
